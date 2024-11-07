@@ -7,8 +7,7 @@ import asyncio
 import logging
 import tgcrypto
 from pyromod import listen
-import logging
-from tglogging import TelegramLogHandler
+# from tglogging import TelegramLogHandler
 
 # Config 
 class Config(object):
@@ -22,7 +21,7 @@ class Config(object):
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
-    GROUPS = os.environ.get('GROUPS', '-4548932679').split(',')
+    GROUPS = os.environ.get('GROUPS', '1291491834').split(',')
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
