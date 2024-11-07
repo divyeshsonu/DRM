@@ -7,7 +7,7 @@ import asyncio
 import logging
 import tgcrypto
 from pyromod import listen
-# from tglogging import TelegramLogHandler
+from tglogging import TelegramLogHandler
 
 # Config 
 class Config(object):
@@ -21,11 +21,11 @@ class Config(object):
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
-    GROUPS = os.environ.get('GROUPS', '1291491834').split(',')
+    GROUPS = os.environ.get('GROUPS', '2320155220').split(',')
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
-    LOG_CH = os.environ.get("LOG_CH", "1291491834")
+    LOG_CH = os.environ.get("LOG_CH", "2320155220")
 
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 logging.basicConfig(
